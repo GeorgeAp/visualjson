@@ -1,0 +1,41 @@
+.json-input-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .line-number-container {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+    color: #999;
+    text-align: right;
+    user-select: none;
+  }
+  
+  .line-numbers {
+    font-family: monospace;
+    margin: 0; /* Prevent default margin */
+  }
+  
+  .json-textarea {
+    font-family: monospace;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .json-textarea.error {
+    border-color: red; /* Highlight border if there's an error */
+  }
+  
+  .error-text {
+    color: red;
+    margin-top: 10px;
+  }
+  

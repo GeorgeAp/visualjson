@@ -1,0 +1,19 @@
+.delete-button {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: 'transparent';
+  border: 'none';
+  cursor: 'pointer';
+  color: 'red';
+}
+
+.react-flow__node:hover .delete-button {
+  display: inline-block; /* Show on hover */
+}
+
+/* The delete button should also be shown when the node is clicked */
+.react-flow__node .delete-button {
+  display: inline-block; /* Show when clicked */
+}

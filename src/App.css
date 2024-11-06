@@ -1,0 +1,150 @@
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.editor,
+.diagram {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #1f77b4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #155a8a;
+}
+
+/* App.css or JSONEditorComponent.css */
+textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  resize: vertical;
+}
+
+/* src/App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+.input-container {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.editor-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.load-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.diagram-container {
+  height: 50vh;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  overflow: auto;
+  position: relative;
+  flex: 1;
+}
+
+.full-screen-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.full-screen-diagram-container {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+}
+
+.diagram-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.full-screen-button {
+  padding: 8px 12px;
+  background-color: #007BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* src/components/DiagramComponent.css */
+
+.diagram-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.svg-element {
+  width: 100%;
+  height: 100%;
+}
+
+.export-button-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.export-button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
